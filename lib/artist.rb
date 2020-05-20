@@ -39,7 +39,6 @@ class Artist
     @@all << self
   end
 
-  def songs
     def songs
   Song.all.find { |song| song.artist == self }
   end
