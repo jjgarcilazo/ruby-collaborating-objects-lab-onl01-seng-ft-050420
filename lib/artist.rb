@@ -44,4 +44,3 @@ class Artist
   Song.all.find { |song| song.artist == self }
   end
   end
-end
