@@ -6,7 +6,7 @@ class Song
 
   def initialize(name)
     @name = name
-    array.push self
+    @@all.push self 
   end
 
   def self.new_by_filename(file)
