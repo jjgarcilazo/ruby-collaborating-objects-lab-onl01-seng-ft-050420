@@ -40,6 +40,8 @@ class Artist
   end
 
   def songs
-    @songs
+    def songs
+  Song.all.find { |song| song.artist == self }
+  end
   end
 end
