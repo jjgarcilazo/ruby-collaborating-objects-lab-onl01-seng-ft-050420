@@ -28,5 +28,7 @@ end
     self.artist = artist
     artist.add_song(self)
   end
-
+  def songs
+    Song.all.find { |song| song.artist == self }
+    end
 end
